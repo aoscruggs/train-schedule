@@ -1,0 +1,89 @@
+€<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Schedule</title>
+	<!--css reset goes here -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">	
+<!--Bootstrap goes here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!--secondary style sheet goes here-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!--Link to jquery goes here-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--Link to Firebase goes here-->
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+<!--Link to momentsjs goes here-->
+	<script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+<!--Link to external javascript goes here-->
+	<script src="./assets/javascript/schedule2.js"></script>
+	
+</head>
+<body>
+<div class = "container">
+	<div class="jumbotron">
+	  <div class="text-center">
+		    <h1>Any Time is Train Time</h1>   	    
+	  </div>
+	</div>
+	<!--Train schedule-->
+		<div class = "row">
+			<div class = "col-md-12">
+				<div class="panel panel-primary">
+	  <!--Train schedule info will be pushed here -->
+		  			<div class="panel-heading">
+		  				<h4>Current Train Schedule</h4>
+		  			</div>
+		  			<!-- Current Train Schedule table goes here-->
+		  				<table class="table">
+						  <thead>
+						  	<tr>
+							  	<th>Train Name</th>	
+							  	<th>Destination</th>
+							  	<th>First Train Time</th>	
+							  	<th>Frequency</th>		
+						  	</tr>
+						  </thead>
+						  <tbody id="new-data"></tbody>
+						</table>
+	  			</div>
+	  		</div>
+	  	</div>
+		  			
+		<div class = "row">
+			<div class = "col-md-12">
+				<div class="panel panel-primary">
+	  <!-- Administrator panel starts here -->
+		  		<div class="panel-heading"><h4 class ="panel-title">Add Train</h4>
+		  		</div>
+	  <!-- Administrator input form starts here -->
+		  		<form>
+	  				<div class="form-group">
+		    		<label for="train name">Train Name</label>
+		    		<input type="input" class="form-control" id="trainName">
+	  				</div>
+	  				<div class="form-group">
+		    		<label for="train destination">Destination</label>
+		    		<input type="input" class="form-control" id="destination">
+	  				</div>
+	  				<div class="form-group">
+		    		<label for="first train time">First Train Time (hr:min)</label>
+		    		<input type="input" class="form-control" id="firstTrainTime">
+	  				</div>
+	  				<div class="form-group">
+		    		<label for="frequency">Frequency</label>
+		    		<input type="input" class="form-control" id="frequency">
+	  				</div>
+  				</form>
+  				<button type="submit" class="btn btn-primary btn-large" id="addTrain" value="submit">Submit</button>
+			</div>
+		</div>
+	</div>					
+	<!--Start coding below-->
+
+
+
+	
+</body>
+</html>

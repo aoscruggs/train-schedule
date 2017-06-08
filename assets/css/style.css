@@ -1,0 +1,18 @@
+.container{
+	background-color: #DDE3E3;
+	
+}
+.jumbotron{
+	background-image: url(super-fast-bullet-train-website-header.jpg);
+	color: red;
+
+}
+.panel-heading{
+	color: #DDE3E3;
+}
+.form-group{
+	padding: 5px;
+}
+.btn{
+	margin: 5px;
+}
